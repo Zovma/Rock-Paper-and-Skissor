@@ -1,0 +1,75 @@
+@keyframes moveTop {
+    /* начинаем анимацию */
+    from {
+        margin-top: 0px;
+    }
+    /* завершаем анимацию*/
+    to {
+        margin-top: -75px;
+    }
+}
+
+#player {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    text-align: center;
+}
+
+#computer {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    text-align: center;
+}
+
+#RPS {
+    position: absolute;
+    height: 25em;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+#butn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+#leftPng {
+    position: absolute;
+    left: 25%;
+    top: 43%;
+}
+
+#rightPng {
+    position: absolute;
+    top: 43%;
+    right: 25%;
+}
+/* #nextGame{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+} */
+
+.runAnimation {
+    /* имя анимации*/
+    animation-name: moveTop;
+    /* продолжительность анимации */
+    animation-duration: 0.5s;
+    /* проиграть анимацию до конца а потом в обратную сторону */
+    animation-direction: alternate;
+    /* оставить элемент в состоянии соответствующем последнему кадру анимации */
+    animation-fill-mode: forwards;
+    /* функция контролирующая скорость анимации */
+    animation-timing-function: ease-in-out;
+    /* количество повторов */
+    animation-iteration-count: 6;
+}
